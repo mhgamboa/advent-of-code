@@ -1,12 +1,6 @@
-const fs = require("fs");
+import { readFileSync } from "fs";
 
-let input: string = fs.readFileSync("./input.txt", "utf8", (err, data) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  return data;
-});
+let input: string = readFileSync("./input.txt", "utf8");
 
 console.log(input);
 
